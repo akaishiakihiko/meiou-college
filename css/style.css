@@ -1,0 +1,528 @@
+/*--------------------------------------------------- 
+全体構造
+----------------------------------------------------*/
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  background-color: #FEE8E6;
+  color: #000000;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  background-image: url(../image/main-design-top.png);
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: -40px;
+}
+
+.content design {
+  height: 10px;
+}
+
+#page-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+  color: #EB6D9A;
+  border: solid 1px;
+  border-radius: 50%;
+  transition: 0.5s;
+  /* box-shadow: 0, 0, , 0, -6px rgba(0, 0, 0, 5); */
+}
+
+#page-top:hover {
+  background-color: #EB6D9A;
+  color: #fff;
+}
+
+
+/*--------------------------------------------------- 
+ヘッダー
+----------------------------------------------------*/
+
+header {
+  background-image: url(../image/home-mainvisual.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  /* margin: 0 auto; */
+}
+
+.header-title {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  margin-top: 20px;
+}
+
+header nav {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  margin-top: 600px;
+  text-align: center;
+}
+
+header ul {
+  padding: 30px;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+header li {
+  font-size: 17px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+header li+li {
+  border-left: 1px dotted #222222;
+}
+
+header li a:hover {
+  border-bottom: 1px solid #222222;
+}
+
+
+/*--------------------------------------------------- 
+メイン
+----------------------------------------------------*/
+
+
+
+
+
+
+/*--------------------------------------------------- 
+アサイド
+----------------------------------------------------*/
+
+aside {
+  width: 300px;
+  margin: 100px 50px 0 0;
+  background-image: url(../image/aside-design-top.png);
+  background-repeat: no-repeat;
+}
+
+aside h2 {
+  font-size: 20px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  border-bottom: 2px solid #EB6D9A;
+}
+
+aside dt {
+  margin: 30px 0 15px 0;
+}
+
+
+aside dd {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #222222;
+  line-height: 2.2;
+}
+
+aside dd a:hover {
+  color: #EB6D9A;
+}
+
+/*--------------------------------------------------- 
+SNS
+----------------------------------------------------*/
+.sns {
+  height: 222px;
+  background-image: url(../image/banner-background.jpg);
+}
+
+.sns-inner {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px;
+}
+
+
+.sns ul {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.sns li {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.sns li+li {
+  border-left: 1px solid #ffffff;
+}
+
+
+
+/*--------------------------------------------------- 
+フッター
+----------------------------------------------------*/
+
+footer {
+  background-image: url(../image/footer-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 780px;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 50px 0 100px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+footer h2 {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+/* フッター　キャンパス */
+
+.footer-address {
+  width: 200px;
+  height: 200px;
+  line-height: 2.5;
+}
+
+/* フッター　インフォ */
+
+.footer-info {
+  text-align: center;
+  width: 350px;
+  height: 200px;
+  margin-top: 15px;
+}
+
+.footer-info h2 {
+  margin-bottom: 60px;
+}
+
+.footer-info a {
+  line-height: 2.5;
+}
+
+.footer-infotext {
+  display: flex;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.footerinfo-left {
+  width: 300px;
+  height: 300px;
+}
+
+.footerinfo-right {
+  width: 350px;
+  height: 300px;
+}
+
+/* フッター　ボタン */
+
+.footer-btn {
+  width: 300px;
+  margin-top: 60px;
+}
+
+.footer-btn img {
+  margin-top: 40px;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.footer-logo img {
+  margin-bottom: 15px;
+}
+
+.footer-logo p {
+  font-size: 8px;
+}
+
+
+/*--------------------------------------------------- 
+ホーム
+----------------------------------------------------*/
+
+#home .content {
+  padding-bottom: 100px;
+}
+
+main h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+main h3 {
+  line-height: 1.5;
+  margin: 15px auto;
+}
+
+main p {
+  line-height: 1.5;
+}
+
+
+/* メイン　学生ピンク */
+
+.newcourse-pink {
+  display: flex;
+  margin: 100px 0 0 100px;
+}
+
+.newcourse-pink-left {
+  width: 300px;
+  height: 300px;
+}
+
+.newcourse-pink-right {
+  width: 300px;
+  height: 300px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.newcourse-pink-right:hover {
+  background-color: #FEE8E6;
+}
+
+
+/* メイン　学生ホワイト */
+
+.newcourse-white {
+  display: flex;
+  margin: 0 0 100px 100px;
+}
+
+.newcourse-white p {
+  margin-bottom: 20px;
+}
+
+.newcourse-white-left {
+  background-color: #ffffff;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.newcourse-white-left:hover {
+  background-color: #FEE8E6;
+}
+
+
+/* メイン　学校　校庭 */
+
+.opencampus-tree {
+  display: flex;
+  margin: 0 0 0 100px;
+}
+
+.opencampus-tree-right h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.opencampus-tree-right {
+  background-color: #ffffff;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.opencampus-tree-right:hover {
+  background-color: #FEE8E6;
+}
+
+
+/* メイン　学校　空 */
+
+.opencampus-sky {
+  display: flex;
+  margin: 0 0 0 100px;
+}
+
+.opencampus-sky-left {
+  background-color: #ffffff;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  padding: 50px 20px 0 20px;
+}
+
+.opencampus-sky-left:hover {
+  background-color: #FEE8E6;
+}
+
+.opencampus-sky-left p {
+  line-height: 2.2;
+  text-align: left;
+}
+
+/*--------------------------------------------------- 
+学群・学部
+----------------------------------------------------*/
+
+#course header {
+  background-image: url(../image/course-mainvisual.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+}
+
+#course main {
+  width: 850px;
+  padding: 120px 40px 0 50px;
+}
+
+#course main h2 {
+  font-size: 20px;
+  background-image: url(../image/course-designtop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 30px;
+}
+
+
+#course main img {
+  margin-bottom: -25px;
+}
+
+#course main h3 {
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#course main p {
+  line-height: 1.5;
+}
+
+#course main .card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
+  border-bottom: 1px solid #222222;
+  margin-top: 30px;
+}
+
+#course main .card {
+  width: 360px;
+}
+
+#course main .card-wrapper:last-child {
+  border-bottom: none;
+}
+
+
+/*--------------------------------------------------- 
+海外留学・国際交流
+----------------------------------------------------*/
+
+#international header {
+  background-image: url(../image/international-minvisual.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+}
+
+#international main {
+  width: 850px;
+  padding: 100px 0 0 50px;
+  margin-bottom: 100px;
+}
+
+#international main img {
+  margin: 30px 5px 30px 0;
+}
+
+#international main h2 {
+  margin-bottom: 30px;
+  background-image: url(../image/international-design-top.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding-bottom: 30px;
+}
+
+#international main p {
+  width: 750px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #222222;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#international main .card-wrapper {
+  display: flex;
+}
+
+#international main h3 {
+  font-size: 20px;
+}
+
+
+/*--------------------------------------------------- 
+お問い合わせ
+----------------------------------------------------*/
+
+
+
+#form main {
+  margin: 100px 0 100px 20px;
+}
+
+#form h2 {
+  font-size: 20px;
+}
+
+#form main dl {}
+
+#form main dt {
+  width: 750px;
+  height: 80px;
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+  border-top: 1px solid #EB6D9A;
+}
+
+#form main dd {}
+
+
+#form main input {
+  background-color: red;
+  width: 750px;
+  height: 50px;
+}
